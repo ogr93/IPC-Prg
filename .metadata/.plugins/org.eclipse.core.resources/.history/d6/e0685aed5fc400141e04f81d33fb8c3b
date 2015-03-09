@@ -1,0 +1,37 @@
+package Calculadora;
+
+import javafx.event.ActionEvent;
+import javafx.fxml.FXML;
+import javafx.scene.control.Button;
+import javafx.scene.control.RadioButton;
+import javafx.scene.control.TextField;
+import javafx.scene.text.Text;
+
+public class Controlador {
+	@FXML
+	private Button uno;
+	@FXML
+	private Button cinco;
+	@FXML
+	private Button diez;
+	@FXML
+	private Button suma;
+	@FXML
+	private RadioButton resta;
+	@FXML
+	private Text texto; 
+	@FXML//texto que se oculta aparece
+	private Text restando;
+	@FXML
+	private TextField input;
+	
+	
+	@FXML
+	protected void uno(ActionEvent key){
+		Double valor=Double.parseDouble(texto.getText());
+		valor++;
+		System.out.println(valor);
+		//String cadena = String.valueOf(valor);
+		//texto.setText(cadena);
+	}
+}

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Calculadora.Controlador">
+   <children>
+      <HBox layoutX="73.0" layoutY="61.0" spacing="20.0" AnchorPane.leftAnchor="120.0" AnchorPane.rightAnchor="120.0" AnchorPane.topAnchor="80.0">
+         <children>
+            <Button fx:id="uno" layoutX="73.0" layoutY="61.0" mnemonicParsing="false" onAction="#uno" text="1" />
+            <Button fx:id="cinco" layoutX="160.0" layoutY="61.0" mnemonicParsing="false" onAction="#cinco" text="5" />
+            <Button fx:id="diez" layoutX="253.0" layoutY="61.0" mnemonicParsing="false" onAction="#diez" text="10" />
+         </children>
+      </HBox>
+      <RadioButton fx:id="resta" layoutX="117.0" layoutY="140.0" mnemonicParsing="false" text="Restar" />
+      <HBox layoutX="112.0" layoutY="175.0" spacing="20.0" AnchorPane.bottomAnchor="175.0" AnchorPane.leftAnchor="100.0" AnchorPane.rightAnchor="80.0" AnchorPane.topAnchor="175.0">
+         <children>
+            <TextField fx:id="input" layoutX="112.0" layoutY="175.0" />
+            <Button fx:id="suma" layoutX="268.0" layoutY="175.0" mnemonicParsing="false" onAction="#suma" text="Suma" />
+         </children>
+      </HBox>
+      <Text fx:id="texto" layoutX="161.0" layoutY="38.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0.0">
+         <font>
+            <Font name="Arial Bold" size="24.0" />
+         </font>
+      </Text>
+      <Text fx:id="restando" layoutX="309.0" layoutY="371.0" strokeType="OUTSIDE" strokeWidth="0.0" text="¡Estas Restando!" />
+      <Label layoutX="47.0" layoutY="175.0" text="Valor" />
+   </children>
+</AnchorPane>

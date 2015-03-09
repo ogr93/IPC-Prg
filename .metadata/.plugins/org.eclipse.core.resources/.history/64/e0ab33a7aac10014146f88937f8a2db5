@@ -1,0 +1,44 @@
+package Calculadora;
+
+import javafx.application.Platform;
+import javafx.event.ActionEvent;
+import javafx.fxml.FXML;
+import javafx.scene.control.CheckBox;
+import javafx.scene.control.TextArea;
+import javafx.scene.layout.AnchorPane;
+
+public class Controladora implements Initializable{
+	@FXML	
+	private Button myButton;	
+	@FXML	
+	private CheckBox myCheckBox;	
+	@FXML	
+	private ComboBox<Person> myComboBox;	
+	@FXML	
+	private Hyperlink myHyperlink;	
+	@FXML	
+	private	Slider	mySlider;	
+	@FXML	
+	private TextField myTextField;	
+	@FXML	
+	private ListView<Person> myListView;	
+	@FXML	
+	private TextArea outputTextArea;	
+	private ObservableList<Person> listViewData = FXCollections.observableArrayList();
+	
+		
+	protected void botonclose(ActionEvent key){
+		Platform.exit();		
+	}
+	protected void selecionado(ActionEvent key){
+		 boolean selected=myCheckBox.isSelected();
+				 if (selected ==true){
+			System.out.println("caja dejada de selecionar");
+			outputTextArea.appendText("CheckBox");
+		}
+		else System.out.println("Caja seleccionada");
+	}
+	
+	
+	
+}

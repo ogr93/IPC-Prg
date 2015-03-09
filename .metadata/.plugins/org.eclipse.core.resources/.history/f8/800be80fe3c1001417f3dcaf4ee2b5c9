@@ -1,0 +1,30 @@
+package Amiguetes;
+
+import javafx.application.Platform;
+import javafx.event.ActionEvent;
+import javafx.fxml.FXML;
+import javafx.scene.control.Button;
+import javafx.scene.control.PasswordField;
+import javafx.scene.control.TextField;
+
+public class Controladora {
+	@FXML
+	private Button bo1;
+	@FXML
+	private Button exit;
+	@FXML
+	private Button bo2;
+	@FXML
+	private Button bo3;
+	@FXML
+	private PasswordField contra;
+	@FXML
+	private TextField usuario;
+	
+	protected void botonclose(ActionEvent key){
+		Platform.exit();		
+	}
+	
+	
+	
+}

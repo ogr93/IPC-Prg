@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.input.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane prefHeight="350.0" prefWidth="450.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="menus.Controladores">
+   <top>
+      <AnchorPane prefHeight="100.0" prefWidth="450.0">
+         <children>
+            <MenuBar prefHeight="350.0" prefWidth="500.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" BorderPane.alignment="CENTER">
+              <menus>
+                <Menu text="_Archivo">
+                  <items>
+                    <MenuItem mnemonicParsing="false" text="Salir" />
+                  </items>
+                     <accelerator>
+                        <KeyCodeCombination alt="ANY" code="A" control="UP" meta="UP" shift="UP" shortcut="UP" />
+                     </accelerator>
+                </Menu>
+                <Menu text="_Lanzar">
+                  <items>
+                        <MenuItem mnemonicParsing="false" text="Amazon" />
+                        <MenuItem mnemonicParsing="false" text="Blogger" />
+                    <MenuItem mnemonicParsing="false" text="Ebay" />
+                        <MenuItem mnemonicParsing="false" text="Facebook" />
+                        <MenuItem mnemonicParsing="false" text="Google+" />
+                  </items>
+                     <accelerator>
+                        <KeyCodeCombination alt="ANY" code="L" control="UP" meta="UP" shift="UP" shortcut="UP" />
+                     </accelerator>
+                </Menu>
+                <Menu text="_Opciones">
+                  <items>
+                        <Menu mnemonicParsing="false" text="Comprar en">
+                           <items>
+                              <RadioMenuItem mnemonicParsing="false" text="Amazon" />
+                              <RadioMenuItem mnemonicParsing="false" text="Ebay" />
+                           </items>
+                        </Menu>
+                  </items>
+                     <accelerator>
+                        <KeyCodeCombination alt="ANY" code="O" control="UP" meta="UP" shift="UP" shortcut="UP" />
+                     </accelerator>
+                </Menu>
+              </menus>
+            </MenuBar>
+            <ToolBar prefHeight="40.0" prefWidth="200.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="30.0">
+              <items>
+                <Button mnemonicParsing="false" onAction="#handle">
+                     <graphic>
+                        <ImageView fitHeight="50.0" fitWidth="60.0" onMouseClicked="#handle" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../iconos/amazon.jpg" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button mnemonicParsing="false">
+                     <graphic>
+                        <ImageView fitHeight="50.0" fitWidth="60.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../iconos/blogger.jpg" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button mnemonicParsing="false">
+                     <graphic>
+                        <ImageView fitHeight="50.0" fitWidth="60.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../iconos/ebay.jpg" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button mnemonicParsing="false">
+                     <graphic>
+                        <ImageView fitHeight="50.0" fitWidth="60.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../iconos/facebook.jpg" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button mnemonicParsing="false">
+                     <graphic>
+                        <ImageView fitHeight="50.0" fitWidth="60.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../iconos/google-plus.jpg" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+              </items>
+            </ToolBar>
+         </children>
+      </AnchorPane>
+   </top>
+   <bottom>
+      <Label text="Visitando " BorderPane.alignment="CENTER" />
+   </bottom>
+</BorderPane>

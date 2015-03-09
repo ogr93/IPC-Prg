@@ -1,0 +1,49 @@
+package Amiguetes;
+
+import javafx.application.Platform;
+import javafx.event.ActionEvent;
+import javafx.fxml.FXML;
+import javafx.scene.control.Button;
+import javafx.scene.control.PasswordField;
+import javafx.scene.control.TextField;
+import javafx.scene.web.WebView;
+
+public class Controladora {
+	@FXML
+	private Button bo1;
+	@FXML
+	private Button exit;
+	@FXML
+	private Button bo2;
+	@FXML
+	private Button bo3;
+	@FXML
+	private PasswordField contra;
+	@FXML
+	private TextField usuario;
+	@FXML 
+	private WebView web;
+	
+	protected void botonclose(ActionEvent key){
+		Platform.exit();		
+	}
+	
+	protected void bot1(ActionEvent key){
+		 String u1="castro";
+		 String u2="xusi";
+		 String u3="javi";
+		 if(usuario.equals(u1)){
+			 System.out.println("castro borracho");
+		 }
+		 bo1.setOnAction(new EventHandler(ActionEvent()){
+			 @Override
+			 public void Handle(ActionEvent e){
+				 System.out.println("Castro Gasto 25 eur en una skin del LOL");
+				 
+				 
+			 }
+			 	 
+		 });
+	}
+	
+}

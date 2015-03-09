@@ -1,0 +1,32 @@
+package Calculadora;
+
+import javafx.fxml.FXML;
+import javafx.scene.layout.GridPane;
+import javafx.scene.layout.*;
+
+public class Controladora {
+	@FXML	
+	private Button myButton;	
+	@FXML	
+	private CheckBox myCheckBox;	
+	@FXML	
+	private ComboBox<Person> myComboBox;	
+	@FXML	
+	private Hyperlink myHyperlink;	
+	@FXML	
+	private	Slider	mySlider;	
+	@FXML	
+	private TextField myTextField;	
+	@FXML	
+	private ListView<Person> myListView;	
+	@FXML	
+	private TextArea outputTextArea;	
+	
+	
+	
+	
+	
+	
+	
+	
+}

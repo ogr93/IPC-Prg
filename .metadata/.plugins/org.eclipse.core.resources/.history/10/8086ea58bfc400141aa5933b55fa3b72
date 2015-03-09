@@ -1,0 +1,79 @@
+package Calculadora;
+
+import javafx.event.ActionEvent;
+import javafx.fxml.FXML;
+import javafx.scene.control.Button;
+import javafx.scene.control.RadioButton;
+import javafx.scene.control.TextField;
+import javafx.scene.text.Text;
+
+public class Controlador {
+	@FXML
+	private Button uno;
+	@FXML
+	private Button cinco;
+	@FXML
+	private Button diez;
+	@FXML
+	private Button suma;
+	@FXML
+	private RadioButton resta;
+	@FXML
+	private Text texto; 
+	@FXML//texto que se oculta aparece
+	private Text restando;
+	@FXML
+	private TextField input;
+	
+	
+	@FXML
+	protected void uno(ActionEvent key){
+		String x =texto.getText();
+		double valor;
+		if(x.length()==0){valor=1;}
+		else{
+			valor=Double.parseDouble(texto.getText());
+			valor++;
+			}
+		String cadena = String.valueOf(valor);
+		texto.setText(cadena);
+	}
+	@FXML
+	protected void cinco(ActionEvent key){
+		String x =texto.getText();
+		double valor;
+		if(x.length()==0){valor=5;}
+		else{
+			valor=Double.parseDouble(texto.getText());
+			valor=valor+5;
+			}
+		String cadena = String.valueOf(valor);
+		texto.setText(cadena);
+	}
+	@FXML
+	protected void diez(ActionEvent key){
+		String x =texto.getText();
+		double valor;
+		if(x.length()==0){valor=10;}
+		else{
+			valor=Double.parseDouble(texto.getText());
+			valor=valor+10;
+			}
+		String cadena = String.valueOf(valor);
+		texto.setText(cadena);
+	}
+	@FXML
+	protected void suma(ActionEvent key){
+		String y =input.getText();
+		double valor;
+		double a=Double.parseDouble(texto.getText());
+		if(y.length()==0){valor=0;}
+		else{
+			valor=Double.parseDouble(input.getText());
+			}
+		valor=valor+a;
+		String cadena = String.valueOf(valor);
+		texto.setText(cadena);
+
+	}
+}
